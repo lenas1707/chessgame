@@ -51,7 +51,8 @@ public class PlayerManager {
     public static void recordGameResult(String winner, String loser) {
         recordGameResult(winner, loser, false);
     }
-
+    
+    // The data package saves game results for persistence
     public static void recordGameResult(String player1, String player2, boolean isDraw) {
         String result = isDraw ? "Draw" : player1 + " won";
         String resultLine = player1 + " vs " + player2 + "," + result + "," + new Date();
